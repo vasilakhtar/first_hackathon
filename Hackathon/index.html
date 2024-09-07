@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Secure Voting Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo"><i class="fas fa-vote-yea"></i> Secure Voting</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="voting-section">
+            <h2><i class="fas fa-poll"></i> Select a Political Party</h2>
+            <form id="voting-form">
+                <label for="parties">Choose a party:</label>
+                <select id="parties" name="parties">
+                    <option value="sel">--Select Party--</option>
+                    <option value="bjb">Bhartiya Janta Party (BJP)</option>
+                    <option value="inc">Indian National Congress (INC)</option>
+                    <option value="aap">Aam Aadmi Party (AAP)</option>
+                    <option value="cpi-m">Communist Party of India (Marxist) (CPI-M)</option>
+                    <option value="cpi">Communist Party of India (CPI)</option>
+                    <option value="ncp">Nationalist Congress Party (NCP)</option>
+                    <option value="bsp">Bahujan Samaj Party (BSP)</option>
+                    <option value="sp">Samajwadi Party (SP)</option>
+                    <option value="shs">Shiv Sena (SHS)</option>
+                    <option value="dmk">Dravida Munnetra Kazhagam (DMK)</option>
+                    <option value="admk">All India Anna Dravida Munnetra Kazhagam (AIADMK)</option>
+                    <option value="trs">Telangana Rashtra Samithi (TRS)</option>
+                    <option value="tdp">Telugu Desam Party (TDP)</option>
+                    <option value="jd-u">Janata Dal (United) (JD-U)</option>
+                    <option value="jd-s">Janata Dal (Secular) (JD-S)</option>
+                    <option value="rjd">Rashtriya Janata Dal (RJD)</option>
+                    <option value="tmc">All India Trinamool Congress (TMC)</option>
+                    <option value="ysrcp">YSR Congress Party (YSRCP)</option>
+                    <option value="lok">Lok Janshakti Party (LJP)</option>
+                    <option value="rpi">Republican Party of India (RPI)</option>
+                </select>
+                <button type="submit"><i class="fas fa-check-circle"></i> Submit</button>
+            </form>
+
+            <div id="vote-status"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Secure Voting Platform | <i class="fas fa-envelope"></i> contact@securevoting.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

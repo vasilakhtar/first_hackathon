@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('indian-voting-day-background-political-volunteer_1017-50159.avif'); /* Replace with your preferred image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overlay to darken background for better text visibility */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(40, 44, 52, 0.9);
+    padding: 1rem 2rem;
+}
+
+.nav-logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo i {
+    margin-right: 8px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: rgba(40, 44, 52, 0.9);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.voting-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h2 i {
+    margin-right: 8px;
+}
+
+label, select, button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#vote-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: red;
+}
+/* About Page Specific Styles */
+.about-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.about-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.about-section p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Contact Page Specific Styles */
+.contact-section {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.contact-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-section button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-section button i {
+    margin-right: 5px;
+}
+
+.contact-section button:hover {
+    background-color: #45a049;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(40, 44, 52, 0.9);
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer i {
+    margin-left: 5px;
+}
